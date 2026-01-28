@@ -1,0 +1,47 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Arial',sans-serif; scroll-behavior: smooth; }
+body { background:#121212; color:#fff; transition: background 0.3s, color 0.3s; }
+
+/* Light Theme */
+body.light { background:#f4f4f4; color:#121212; }
+
+header { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#1f1f1f; transition: background 0.3s; }
+body.light header { background:#fff; }
+header .logo { font-size:24px; font-weight:bold; color:#ff3c00; }
+header nav ul { list-style:none; display:flex; gap:20px; }
+header nav ul li a { text-decoration:none; color:#fff; transition:color 0.3s; }
+body.light header nav ul li a { color:#121212; }
+header nav ul li a:hover { color:#ff3c00; }
+#theme-toggle { background:none; border:none; font-size:20px; cursor:pointer; color:#fff; }
+body.light #theme-toggle { color:#121212; }
+
+/* Hero */
+.hero { text-align:center; padding:80px 20px; background:url('https://via.placeholder.com/1200x500') center/cover no-repeat; }
+.hero input { margin-top:20px; padding:10px 15px; border-radius:5px; border:none; width:250px; }
+
+/* Games */
+.games-container { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:50px 20px; }
+.game-card { background:#1f1f1f; border-radius:10px; overflow:hidden; width:300px; text-align:center; transition: transform 0.3s; }
+body.light .game-card { background:#fff; color:#121212; }
+.game-card:hover { transform:translateY(-10px); }
+.game-card img { width:100%; }
+.game-card h3 { margin:15px 0 10px; }
+.game-card p { padding:0 10px 15px; }
+
+/* Streams */
+.streams-container { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:50px 20px; }
+iframe { width:400px; height:250px; }
+
+/* Reviews */
+.reviews-container { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:50px 20px; }
+.review { background:#1f1f1f; border-radius:10px; padding:20px; width:300px; transition: transform 0.3s; }
+body.light .review { background:#fff; color:#121212; }
+.review:hover { transform:scale(1.05); }
+
+/* Footer */
+footer { text-align:center; padding:20px; background:#1f1f1f; margin-top:50px; }
+body.light footer { background:#fff; color:#121212; }
+
+/* Responsive */
+@media(max-width:768px){
+    .streams-container iframe, .games-container, .reviews-container { width:100%; flex-direction:column; }
+}

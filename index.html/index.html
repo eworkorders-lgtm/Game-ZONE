@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameZone - Ultimate Gaming Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">GameZone</div>
+    <nav>
+        <ul>
+            <li><a href="#latest-games">Games</a></li>
+            <li><a href="#top-streams">Streams</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="theme-toggle">🌙</button>
+</header>
+
+<section class="hero">
+    <h1>Welcome to GameZone</h1>
+    <p>Your hub for the latest games, streams, and reviews!</p>
+    <input type="text" id="search" placeholder="Search games...">
+</section>
+
+<section id="latest-games">
+    <h2>Latest Games</h2>
+    <div class="games-container" id="games-container">
+        <div class="game-card" data-name="Cyber Quest">
+            <img src="images/cyberquest.jpg" alt="Cyber Quest">
+            <h3>Cyber Quest</h3>
+            <p>Explore a futuristic cyber world.</p>
+        </div>
+        <div class="game-card" data-name="Dragon Realms">
+            <img src="images/dragonrealms.jpg" alt="Dragon Realms">
+            <h3>Dragon Realms</h3>
+            <p>Embark on a mythical adventure.</p>
+        </div>
+        <div class="game-card" data-name="Speed Racer X">
+            <img src="images/speedracerx.jpg" alt="Speed Racer X">
+            <h3>Speed Racer X</h3>
+            <p>High-speed racing thrills.</p>
+        </div>
+    </div>
+</section>
+
+<section id="top-streams">
+    <h2>Top Streams</h2>
+    <div class="streams-container">
+        <iframe src="https://player.twitch.tv/?channel=shroud&parent=localhost" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://player.twitch.tv/?channel=ninja&parent=localhost" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Game Reviews</h2>
+    <div class="reviews-container">
+        <div class="review">
+            <h3>Cyber Quest</h3>
+            <p>⭐⭐⭐⭐⭐ Amazing gameplay and futuristic world-building!</p>
+        </div>
+        <div class="review">
+            <h3>Dragon Realms</h3>
+            <p>⭐⭐⭐⭐ Great story, but graphics could be better.</p>
+        </div>
+        <div class="review">
+            <h3>Speed Racer X</h3>
+            <p>⭐⭐⭐⭐⭐ Perfect racing physics and high-speed thrills.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>Contact us: info@gamezone.com | © 2026 GameZone</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
